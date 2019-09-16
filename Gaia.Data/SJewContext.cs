@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Gaia.Data
 {
-    public partial class SJewContext : DbContext
+    public partial class GaiaContext : DbContext
     {
-        public SJewContext(DbContextOptions options) : base(options)
+        public GaiaContext(DbContextOptions options) : base(options)
         {
         }
 

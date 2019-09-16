@@ -7,7 +7,7 @@ using Gaia.Data;
 
 namespace SJew.Data.Migrations
 {
-    [DbContext(typeof(SJewContext))]
+    [DbContext(typeof(GaiaContext))]
     partial class SJewContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

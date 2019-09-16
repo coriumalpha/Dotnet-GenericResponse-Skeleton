@@ -42,9 +42,9 @@ namespace Gaia.Api
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            var connectionString = Configuration.GetConnectionString(nameof(SJewContext));
-            services.AddDbContext<SJewContext>(options => options.UseSqlServer(connectionString));
-            services.AddScoped<DbContext, SJewContext>();
+            var connectionString = Configuration.GetConnectionString(nameof(GaiaContext));
+            services.AddDbContext<GaiaContext>(options => options.UseSqlServer(connectionString));
+            services.AddScoped<DbContext, GaiaContext>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddScoped<ITrackableRepository<User>, TrackableRepository<User>>();

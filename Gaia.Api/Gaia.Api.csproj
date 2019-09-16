@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -14,10 +14,10 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Helpers\Gaia.Helpers.csproj" />
-    <ProjectReference Include="..\SJew.Data\Gaia.Data.csproj" />
-    <ProjectReference Include="..\SJew.Entity\Gaia.Entity.csproj" />
-    <ProjectReference Include="..\SJew.Service\Gaia.Services.csproj" />
+    <ProjectReference Include="..\Gaia.Helpers\Gaia.Helpers.csproj" />
+    <ProjectReference Include="..\Gaia.Data\Gaia.Data.csproj" />
+    <ProjectReference Include="..\Gaia.Entity\Gaia.Entity.csproj" />
+    <ProjectReference Include="..\Gaia.Service\Gaia.Services.csproj" />
   </ItemGroup>
 
 </Project>

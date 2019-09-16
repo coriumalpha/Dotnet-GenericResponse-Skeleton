@@ -5,13 +5,13 @@ using Gaia.Data.Models;
 
 namespace Gaia.Data
 {
-    public class SJewContextFactory : IDesignTimeDbContextFactory<SJewContext>
+    public class SJewContextFactory : IDesignTimeDbContextFactory<GaiaContext>
     {
-        public SJewContext CreateDbContext(string[] args)
+        public GaiaContext CreateDbContext(string[] args)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<SJewContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<GaiaContext>();
             optionsBuilder.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = SJewDB; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
-            return new SJewContext(optionsBuilder.Options);
+            return new GaiaContext(optionsBuilder.Options);
         }
     }
 }

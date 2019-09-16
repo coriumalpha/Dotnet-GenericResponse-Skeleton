@@ -8,7 +8,7 @@ using Gaia.Data;
 
 namespace SJew.Data.Migrations
 {
-    [DbContext(typeof(SJewContext))]
+    [DbContext(typeof(GaiaContext))]
     [Migration("20190623115523_InitialCreate")]
     partial class InitialCreate
     {

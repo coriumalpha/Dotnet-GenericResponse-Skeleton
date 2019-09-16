@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Helpers.GenericResponse;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SJew.Service;
@@ -29,9 +30,16 @@ namespace SJew.Api.Controllers
         [HttpGet("{id}", Name = "Get")]
         public async Task<IActionResult> Get(int id)
         {
-            var users = await _userService.FindAsync(id);
+            try
+            {
+                var users = await _userService.FindAsync(id);
+                return Ok(new SuccessResponse(users));
+            }
+            catch (Exception exception)
+            {
+                return Ok(new ErrorResponse(ResponseCode.RecordNotFound, exception));
+            }
 
-            return Ok(users);
         }
 
         // POST: api/User

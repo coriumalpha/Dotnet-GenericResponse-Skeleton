@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using SJew.Data.Models;
+using Gaia.Data.Models;
 
 
-namespace SJew.Data
+namespace Gaia.Data
 {
     public class SJewContextFactory : IDesignTimeDbContextFactory<SJewContext>
     {

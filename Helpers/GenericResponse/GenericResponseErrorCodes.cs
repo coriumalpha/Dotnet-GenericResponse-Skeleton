@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Helpers.GenericResponse
+namespace Gaia.Helpers.GenericResponse
 {
     public enum ResponseCode
     {

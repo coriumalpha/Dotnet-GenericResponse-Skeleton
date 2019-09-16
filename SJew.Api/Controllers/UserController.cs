@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Helpers.GenericResponse;
+using Gaia.Helpers.GenericResponse;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SJew.Service;
+using Gaia.Services;
 using URF.Core.Abstractions;
 
-namespace SJew.Api.Controllers
+namespace Gaia.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SJew.Entity\SJew.Entity.csproj" />
+    <ProjectReference Include="..\SJew.Entity\Gaia.Entity.csproj" />
   </ItemGroup>
 
 </Project>

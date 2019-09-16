@@ -10,15 +10,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SJew.Data;
-using SJew.Data.Models;
-using SJew.Service;
+using Gaia.Data;
+using Gaia.Data.Models;
+using Gaia.Services;
 using URF.Core.Abstractions;
 using URF.Core.Abstractions.Trackable;
 using URF.Core.EF;
 using URF.Core.EF.Trackable;
 
-namespace SJew.Api
+namespace Gaia.Api
 {
     public class Startup
     {

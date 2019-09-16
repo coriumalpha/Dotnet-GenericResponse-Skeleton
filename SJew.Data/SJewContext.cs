@@ -1,8 +1,9 @@
 ﻿using System;
+using Gaia.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace SJew.Data.Models
+namespace Gaia.Data
 {
     public partial class SJewContext : DbContext
     {

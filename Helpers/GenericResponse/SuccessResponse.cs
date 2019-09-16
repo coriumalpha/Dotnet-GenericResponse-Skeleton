@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Helpers.GenericResponse
+namespace Gaia.Helpers.GenericResponse
 {
     public class SuccessResponse : GenericResponse
     {
@@ -26,6 +26,6 @@ namespace Helpers.GenericResponse
             this.Data = data;
         }
 
-        public bool Success { get; } = true;
+        public new bool Success { get; } = true;
     }
 }
